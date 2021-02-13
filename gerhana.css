@@ -1,0 +1,50 @@
+html{
+    height: 100%;
+}
+body{
+display: flex;
+    justify-content: center;
+    align-items:  center;
+    height: 100%;
+    animation: ubah-background 5s infinite linear;
+}
+.container{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.moon, 
+.sun {
+    position: absolute;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+.sun{
+    background: #FEAD03;
+}
+.moon{
+    background: #000;
+    animation: gerakan-bulan 5s infinite linear, ubah-background 5s infinite linear;
+  
+}
+@keyframes gerakan-bulan{
+    0%{
+        left: 160px;
+    }
+    100%{
+        left: -160px;
+    }
+}
+@keyframes ubah-background{
+    0%{
+        background: #fff;
+    }
+    50%{
+        background: #000;
+    }
+    100%{
+        background: #fff;
+    }
+
+}
