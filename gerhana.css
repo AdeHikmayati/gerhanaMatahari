@@ -12,6 +12,9 @@ display: flex;
     position: relative;
     width: 150px;
     height: 150px;
+
+    
+
 }
 .moon, 
 .sun {
@@ -21,9 +24,12 @@ height: 150px;
 border-radius: 50%;
 }
 .sun{
-    background: #FEAD03;
+    background: rgba(255,255, 24, 0.89);
+   
+    box-shadow: 0 0 100px rgba(255,255, 24, 0.20), 0 0 100px rgba(255,255, 24, 0.89);
 }
 .moon{
+
     background: #000;
     animation: gerakan-bulan 5s infinite linear, ubah-background 5s infinite linear;
   
